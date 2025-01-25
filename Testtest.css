@@ -19,7 +19,7 @@ header {
     background-color: #000000;
     position: relative;
     /* background-image: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #000000); */
-    border-bottom: 8px solid #ffffff;
+    border-bottom: 0.5vw solid #ffffff;
 }
 
 header h1 {
