@@ -1,0 +1,165 @@
+/* 樣式設置 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    word-wrap: break-word;
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.5rem; /* 調整字體大小以適應小螢幕 */
+    }
+}
+
+header {
+    text-align: center;
+    padding-top: 0.3rem;  /* 設置較小的上邊距 */
+    padding-bottom: 1rem;
+    background-color: #000000;
+    position: relative;
+    /* background-image: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #000000); */
+    border-bottom: 8px solid #ffffff;
+}
+
+header h1 {
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: "SimSun", "Microsoft JhengHei", "SimSun", "Microsoft YaHei", sans-serif;
+    max-width: 100%;
+    word-wrap: break-word; /* 使文字能自動換行 */
+    white-space: normal;   /* 保證可以正常換行 */
+    text-align: center;     /* 使文字居中 */
+    line-height: 0.5;       /* 調整行間距，數字越小，兩行間距越近 */
+    color: #ffffff;
+}
+
+header h2 {
+    font-size: 2vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    font-family: "SimSun", "Microsoft JhengHei", "SimSun", "Microsoft YaHei", sans-serif;
+    font-weight: 1000;
+    max-width: 100%;
+    word-wrap: break-word; /* 使文字能自動換行 */
+    white-space: normal;   /* 保證可以正常換行 */
+    text-align: center;     /* 使文字居中 */
+    line-height: 0.5;       /* 調整行間距，數字越小，兩行間距越近 */
+    color: #ffffff;
+}
+
+/* Grid 容器設置 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr); 
+    gap: 40px; /* 間距 */
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    aspect-ratio: 0.5;
+}
+
+.grid-item {
+    background-size: cover; /* 背景圖片填充 */
+    background-position: center; /* 使背景圖片居中 */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* 放大圖片 */
+    opacity: 0.5; /* 讓圖片略微變透明 */
+}
+
+/* 按鈕的點擊效果 */
+.grid-item:active {
+    transform: scale(0.95); /* 點擊時略縮小 */
+}
+
+/* 取消超連結的底線 */
+a {
+    text-decoration: none; /* 移除超連結底線 */
+}
+
+/* 為每個按鈕設置不同的樣式 */
+.button1 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/923360/pexels-photo-923360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button2 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/37337/cat-silhouette-cats-silhouette-cat-s-eyes.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button3 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/1022158/pexels-photo-1022158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button4 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/30374845/pexels-photo-30374845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button5 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/7725635/pexels-photo-7725635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button6 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/16622850/pexels-photo-16622850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button7 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/17092975/pexels-photo-17092975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button8 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/19441058/pexels-photo-19441058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button9 {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/4340065/pexels-photo-4340065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
