@@ -14,8 +14,8 @@ body {
 
 header {
     text-align: center;
-    padding-top: 0.3rem;  /* 設置較小的上邊距 */
-    padding-bottom: 1rem;
+    padding-top: 1vw;  /* 設置較小的上邊距 */
+    padding-bottom: 1vw;
     background-color: #000000;
     position: relative;
     /* background-image: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #000000); */
