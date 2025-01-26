@@ -51,7 +51,7 @@ header h2 {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr); 
+    grid-template-rows: repeat(10, 1fr); 
     gap: 2.5vw; /* 間距 */
     width: 90%;
     max-width: 100vw;
@@ -147,6 +147,14 @@ a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
     font-family: "SimSun", "Microsoft YaHei", sans-serif;
     background-image: url('https://images.pexels.com/photos/17092975/pexels-photo-17092975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.button7a {
+    font-size: 5vw; /* 設置字體大小基於視窗寬度 */
+    font-weight: bold; /* 設置粗體 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    font-family: "SimSun", "Microsoft YaHei", sans-serif;
+    background-image: url('https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
 .button8 {
